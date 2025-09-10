@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My Personal Website</title>
+  <style>
+    .circle-image {
+      border-radius: 50%;
+      width: 300px;
+      height: 300px;
+      object-fit: cover;
+    }
+    body {
+      font-family: Georgia, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: slategray;
+      color: #0a0c0f;
+    }
+    header {
+      background: slategray;
+      color: #141010;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 10px 0 5px;
+    }
+    header p {
+      margin: 5px 0;
+      font-style: normal;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: black;
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: white;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    section h2 {
+      border-bottom: 2px solid #333;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+    .card {
+      background: #fff;
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      background: #110d0d;
+      color: #fff;
+      padding: 10px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/profilepicture.jpg" class="circle-image" alt="Profile Picture">
+    <h1>BABY JANE BARRUN</h1>
+    <p>Web Developer | Designer</p>
+    <nav>
+      <a href="#profile">Profile</a>
+      <a href="#works">Works</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="profile">
+    <h2>Profile</h2>
+    <div class="card">
+      <p>Hello! I am a passionate web developer with experience in creating responsive and user-friendly websites.</p>
+      <p>I have experience in HTML, CSS, JavaScript, and SQL, with a growing interest in web application development and graphic design.</p>
+</p>
+    </div>
+  </section>
+
+  <section id="works">
+    <h2>Works</h2>
+    <div class="card">
+      <ul>
+      <li>Graphic Arts (2022-2023)</li>
+      <li>Case Study (2023-2024)</li>
+      <li>Web Development (Present)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="card">
+      <ul>
+      <li><stong>Project One:</rstrong> Mandala Art (Adobe Photoshop)</li>
+      <li><strong>Project Two:</strong> BL Jey Food Hub (HTML & CSS)</li>
+      <li><strong>Project Three:</strong> Boarding House Reservation System (SQL)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="card">
+      <ul>
+      <li>Web Design</li>
+      <li>Graphic Editing</li>
+      <li>Database Management</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="card">
+      <p><strong>Email:</strong> babyjanebarrun@gmail.com</p>
+      <p><strong>Phone:</strong> 09517035960</p>
+      <p><strong>Facebook:</strong> Bjane Vibas Barrun</p>
+      <p><strong>Location:</strong> Cabitan, Mandaon, Masbate</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© <span id="year"></span> Baby Jane Barrun</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
